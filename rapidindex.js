@@ -32,7 +32,8 @@ app.post("/weather/:city",async(req,res)=>{
         })
         console.log(result)
     } catch (error) {
-        res.send(error+ ": city not found")
+        res.render("error.ejs")
+        console.log(error)
     }
 })
    
