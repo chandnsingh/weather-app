@@ -107,20 +107,29 @@ body{
     font-family: "Lucida Handwriting", "Brush Script MT", cursive;
     font-style: italic;
 }
-@media(max-width: 500px){
+@media(max-width: 480px){
 
     .container{
         width: 440px;
+    }
+    .text{   
+        padding: 6px 10px 6px 10px;
     }
 }
 @media(max-width: 440px){
     .container{
         width: 400px;
     }
+    .text{   
+        padding: 6px 8px 6px 7px;
+    }
 }
 @media(max-width: 400px){
     .container{
         width: 365px;
+    }
+    .text{   
+        padding: 6px 7px 6px 7px;
     }
 }
     
