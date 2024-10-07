@@ -1,0 +1,126 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background:url("../images/background.png");
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 1.6; 
+    color: #333; 
+
+}
+.container{
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    width: 420px;
+    height: 530px;
+    backdrop-filter: blur(2px);
+    border: 1.5px solid black;
+}
+.enter{
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+}
+.text{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px 30px 6px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none; /* Removes the border */
+    outline: none; 
+}
+.btn{
+    color: black;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 15px;
+    padding: 6.5px 15px 6.5px 15px;
+    background-color: white;
+    border: none; 
+    font-size: .95rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.btn:hover {
+        transform: scale(0.95);; 
+}
+
+.location {
+    text-align: center;
+    color: rgb(161, 198, 241);
+    margin-top: 18px;
+    font-size: 1rem;
+}
+.temprature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    color: rgb(250, 228, 157);
+}
+.temprature .weather_img{
+    margin-top: 5px;
+}
+
+
+.weather_content{
+    text-align: center;
+    color: rgb(235, 189, 189);
+    font-size: 1rem;
+}
+.weather_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    gap: 58px;
+}
+.col1, .col2{
+    color: rgb(241, 252, 193);
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.weather_info p{
+    margin-top: 10px;
+}
+.time h2{
+    font-size: 1rem;
+    color: rgb(151, 247, 167);
+    text-align: center;
+    margin-top: 4px;
+    text-align: bold;
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+    font-style: italic;
+}
+@media(max-width: 500px){
+
+    .container{
+        width: 440px;
+    }
+}
+@media(max-width: 440px){
+    .container{
+        width: 400px;
+    }
+}
+@media(max-width: 400px){
+    .container{
+        width: 365px;
+    }
+}
+    

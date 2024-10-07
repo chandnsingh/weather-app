@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Weather</title>
+</head>
+<body>
+
+<% if (locals.result) { %>
+
+<div class="container">
+    <div class="enter">
+        <form action="/weather/<%= city %>" method="post">
+            <input class="text" type="text" name="city" id="city">
+            <input class="btn" type="submit" value="submit">
+            </form>
+    </div>
+
+    <div class="location">
+        <h1><%=result.location.name%>, <%=result.location.country%></h1>
+    </div>
+
+    <div class="temprature">
+        <div class="weather_img">
+            <img src="<%= result.current.condition.icon %>" alt="hello" height="70px">
+        </div>
+        <div class="temp">
+            <h1><%= result.current.temp_c %>°C</h1>
+        </div>
+    </div>
+
+    <div class="weather_content">
+        <h1><%= result.current.condition.text %></h1>
+    </div>
+
+    <div class="weather_info">
+        <div class="col2">
+            <p>Feels Like : <%= result.current.feelslike_c %>°C</p>
+            <p>Heat Index :  <%= result.current.heatindex_c %>°C</p>
+            <p>Visibilty: <%= result.current.vis_km %> km/h</p>
+        </div>
+        <div class="col2">
+            <p>Humidity : <%= result.current.humidity %>%</p>
+            <p>Wind : "<%= result.current.wind_dir %>"  <%= result.current.wind_kph %>km/h</p>
+            <p>Pressure :<%= result.current.pressure_mb %> hPa</p>
+        </div>
+    </div>
+    <div class="time">
+        <h2>Local Time : <%= result.location.localtime %></h2>
+    </div>
+</div>
+<% } else { %>
+    <div class="container">
+        <div class="enter">
+            <form action="/weather/:city" method="post">
+                <input class="text" type="text" name="city" id="city">
+                <input class="btn" type="submit" value="submit">
+            </form>
+        </div>
+    
+        <div class="location">
+            <h1>No Location Yet</h1>
+        </div>
+    
+        <div class="weather_info">
+            <div class="col2">
+                <p>Feels Like : N/A</p>
+                <p>Max : N/A</p>
+                <p>Min: N/A</p>
+            </div>
+            <div class="col2">
+                <p>Humidity : N/A</p>
+                <p>Wind : N/A</p>
+                <p>Pressure : N/A</p>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
+</body>
+</html>
