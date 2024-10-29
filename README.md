@@ -1,7 +1,7 @@
-**Name** : Chandan Singh
-**Company** : CODTECH IT SOLUTIONS
-**ID** : CT6WTDS502
-**Domain** : FULL STACK WEB DEVELOPMENT
+**Name** : Chandan Singh. <br>
+**Company** : CODTECH IT SOLUTIONS.
+**ID** : CT6WTDS502.
+**Domain** : FULL STACK WEB DEVELOPMENT.
 **Duration** : SEPTEMBER 5th, 2024 to OCTOBER 20th, 2024.
 **Mentor** :
 
