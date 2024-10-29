@@ -1,4 +1,4 @@
-**Name** : Chandan Singh. <br>
+**Name** : CHANDAN SINGH <br>
 **Company** : CODTECH IT SOLUTIONS. <br>
 **ID** : CT6WTDS502. <br>
 **Domain** : FULL STACK WEB DEVELOPMENT. <br>
@@ -28,6 +28,6 @@ Frameworks and Libraries: <br>
 **Backend Technologies**
 Node.js (with Express): Commonly used to handle API requests, process data, and serve content. <br>
 **Database**
-MongoDB (NoSQL) or PostgreSQL (SQL): To store user data, saved locations, or preferences. <br>
+PostgreSQL (SQL): To store user data, saved locations, or preferences. <br>
 **APIs**
 OpenWeatherMap
